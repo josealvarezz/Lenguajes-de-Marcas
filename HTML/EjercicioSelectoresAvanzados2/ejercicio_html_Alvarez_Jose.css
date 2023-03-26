@@ -1,0 +1,37 @@
+.lheader, .header {
+    font-weight: bold;
+    position: relative;
+}   
+
+.header {
+    text-align: center;   
+}
+
+.lheader {
+    background-color: #E6F3FF;
+    text-align: left;
+}
+
+td {
+    padding: 3px;
+}
+
+.colored {
+    background-color: #FFFFCC;
+}
+
+tr:hover td.colored {
+    background-color: #FFFF66;
+}
+
+body {
+    text-align: right;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+img {
+    height: 20px;
+    display: inline;
+    vertical-align: middle;
+}

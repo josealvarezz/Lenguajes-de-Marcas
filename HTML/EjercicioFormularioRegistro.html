@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friki Formulario de registro</title>
+</head>
+
+<body>
+    <h1>Friki Formulario de registro</h1>
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre humano</label>
+            <input type="text" id="nombre" name="nombre" maxlength="10" size="8"><br>
+
+            <label for="fecha_nacimiento">Fecha nacimiento del humano:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+
+            <label for="raza">Raza</label>
+            <select id="raza" name="raza">
+                <option value="alien">Alien</option>
+                <option value="humanoide">Humanoide</option>
+                <option value="omicroniano">Omicroniano</option>
+            </select><br>
+
+            <label for="colorpiel">Color piel:</label>
+            <input type="color" id="colorpiel" name="colorpiel"><br>
+
+            <label for="tyc">Aceptar términos y condiciones:</label>
+            <input type="checkbox" id="tyc" name="tyc"><br>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Datos de acceso</legend>
+            <label for="password">Palabra Secreta</label>
+            <input type="password" id="password" name="password" maxlength="20" size="10"><br>
+        </fieldset>
+    </form>
+    <input type="submit" value="Registrar friki">
+</body>
+
+</html>
