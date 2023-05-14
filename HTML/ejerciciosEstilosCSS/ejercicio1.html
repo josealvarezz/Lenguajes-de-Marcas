@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <style>
+        #ContenedorPadre {
+            display: grid;
+        }
+
+        button {
+            background-color: #ccc;
+            width: 10em;
+            height: 4em;
+            font-weight: bold;
+            margin: 1em;
+        }
+
+        #Contenedor1, #Contenedor2 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-self: center;
+            margin: 2em 0;
+        }
+
+        #A {
+            box-shadow: -3px -3px #000;
+        }
+
+        #B {
+            box-shadow: -3px -3px 9px #000;
+        }
+
+        #C {
+            box-shadow: #000;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="ContenedorPadre">
+        <div id="Contenedor1">
+            <button id="A">A</button>
+            <button id="B">B</button>
+            <button id="C">C</button>
+            <button id="D">D</button>
+            <button id="E">E</button>
+            <button id="F">F</button>
+        </div>
+
+        <div id="Contenedor2">
+            <button id="G">G</button>
+            <button id="H">H</button>
+            <button id="I">I</button>
+            <button id="J">J</button>
+            <button id="K">K</button>
+            <button id="L">L</button>
+        </div>
+
+</body>
+</html>
