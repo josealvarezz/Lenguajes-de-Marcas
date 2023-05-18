@@ -1,0 +1,67 @@
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Baloo Da 2", serif;
+  text-align: center;
+}
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.foto_normal{
+    width: 10rem;
+    height: auto;
+}
+.precio{
+    background-color: #1ab348;
+    color: white;
+    padding: 1rem;
+    margin: 2.5rem 30%;
+    font-size: 2em;
+    border-radius: 20px;
+}
+div{
+    margin: 2.5rem;
+}
+.primario{
+    background-color: steelblue;
+    color: white;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 200ms 100ms, box-shadow 1s 100ms ease-in-out;
+}
+.primario:hover{
+    color:white;
+    background-color: red;
+    font-size: 20px;
+    filter: brightness(75%);
+    transform: scale(1.5);
+    box-shadow: 0px 0px 6px 4px grey;
+}
+.fila{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.foto_normal{
+    transform-origin: center center;
+    animation: rotacion-pelota 4s ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.foto_normal:hover{
+    animation-play-state: paused;
+}
+@keyframes rotacion-pelota{
+    from {
+        transform: translate(-100px, 0) rotate(0deg);
+    }
+    to{
+        transform: translate(100px, 0) rotate(360deg);
+    }
+}
