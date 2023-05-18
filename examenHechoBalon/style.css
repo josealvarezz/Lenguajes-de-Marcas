@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+.SectorImagen img {
+    max-width: 150px;
+    margin: 10px 0;
+}
+
+.IndicadorCantidad {
+    margin-bottom: -18px;
+    text-align: center;
+}
+
+.IndicadorPrecio {
+    margin: 3em 0;
+    background-color: #1ab348;
+    color: white;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+ button {
+    color: white;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: steelblue;
+    transition: all 200ms 100ms, box-shadow 1s 100ms ease-in-out;
+ }
+
+button:hover {
+    color: white;
+    background-color: red;
+    transform:scale(1.5);
+    box-shadow: 0px 0px 6px 4px grey;
+}
+
+img {
+    transform-origin: center center;
+    animation: rotacion 4s ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotacion {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(200px) rotate(360deg);
+    }
+}
