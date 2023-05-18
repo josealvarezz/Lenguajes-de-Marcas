@@ -42,7 +42,6 @@ h1, p {
 
 .galeria {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     margin: 2em;
     justify-content: center;
@@ -83,3 +82,4 @@ h1, p {
     grid-row: 2;
     grid-column: 3;
 }
+
