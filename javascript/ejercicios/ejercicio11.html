@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11</title>
+    <style>
+        #reloj {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+    <script>
+        function actualizarReloj() {
+            let fecha = new Date();
+            let horas = fecha.getHours();
+            let minutos = fecha.getMinutes();
+            let segundos = fecha.getSeconds();
+
+            //Si alguno de estos es menores a 10, ponemos un 0 delante de los números
+            horas = (horas < 10) ? "0" + horas : horas;
+            minutos = (minutos < 10) ? "0" + minutos : minutos;
+            segundos = (segundos < 10) ? "0" + segundos : segundos;
+
+            let horaActual = horas + ":" + minutos + ":" + segundos;
+
+            //Asignamos al elemento reloj el contenido del reloj
+            document.getElementById("reloj").textContent = horaActual;
+
+            setTimeout(actualizarReloj, 1000);
+        }
+    </script>
+</head>
+
+<body onload="actualizarReloj()">
+    <div id="reloj"></div>
+</body>
+
+</html>

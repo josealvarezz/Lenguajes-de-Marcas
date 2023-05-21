@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+    <script>
+        function mostrarFecha() {
+            let fecha = new Date();
+
+            // Formato 1: DD/MM/AA
+            let fechaFormato1 = fecha.getDate() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getFullYear();
+            // Formato 2 más completo
+            let diasSemana = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+            let meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+            let fechaFormato2 = diasSemana[fecha.getDay()] + ", " + fecha.getDate() + " de " + meses[fecha.getMonth()] + " de " + fecha.getFullYear();
+
+            document.getElementById("fechaFormato1").textContent = fechaFormato1;
+            document.getElementById("fechaFormato2").textContent = fechaFormato2;
+        }
+    </script>
+</head>
+
+<body onload="mostrarFecha()">
+    <h1>Fecha en formatos distintos</h1>
+    <p>Formato 1: <span id="fechaFormato1"></span></p>
+    <p>Formato 2: <span id="fechaFormato2"></span></p>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <script>
+        let suma = 0;
+        let numero;
+        let esNumero;
+
+        do {
+            numero = prompt("Ingresa un número (o pulsa cancelar para salir):");
+            esNumero = !isNaN(numero) && numero !== "";
+
+            if (esNumero) {
+                suma += parseFloat(numero);
+            } else if (numero !== null) {
+                alert("No ha ingresado un número válido. Inténtelo nuevamente.");
+            }
+        } while (numero !== null);
+
+        if (suma !== 0) {
+            alert("La suma total de los números introducidos es: " + suma);
+        } else {
+            alert("No se han introducido números.");
+        }
+
+    </script>
+</body>
+
+</html>
